@@ -1,0 +1,30 @@
+#conocimientos {
+  margin-top: 10rem;
+  padding: 2rem var(--pd-x);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 4rem;
+
+}
+.aptitudes__front-end {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.aptitudes__front-end img {
+  width: 20rem;
+}
+/* Desktop */
+@media screen and (min-width: 1026px) {
+  .layout_decoration-aptitudes {
+      position: absolute;
+      width: 120vw;
+      height: 80vh;
+      top: 19%;
+      z-index: -1;
+      background: var(--violet-color-light);
+      transform: rotate(-7deg);
+  }
+}
