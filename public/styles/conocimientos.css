@@ -1,6 +1,5 @@
 #conocimientos {
   margin-top: 10rem;
-  padding: 2rem var(--pd-x);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -16,8 +15,12 @@
 .aptitudes__front-end img {
   width: 20rem;
 }
-/* Desktop */
-@media screen and (min-width: 1026px) {
+/* TABLE */
+@media screen and (min-width: 767px) {
+  #conocimientos {
+    padding-bottom: 9rem;
+    padding-top: 5rem;
+  }
   .layout_decoration-aptitudes {
       position: absolute;
       width: 120vw;

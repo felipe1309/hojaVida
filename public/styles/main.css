@@ -8,7 +8,7 @@
   --text-resalt: #0152ff;
 
   /* PADDING */
-  --pd-x: 5%;
+  --pd-x: 10px;
 
   /* Font Zise */
   --fz-xxs: 12px;
@@ -39,8 +39,15 @@ html {
   text-decoration: none;
   color: var(--text-color);
 }
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
 body {
   background-color: var(--bg-color);
+}
+main{
+  width: 100vw;
 }
 .mg-b-03 {
   margin-bottom: 0.5rem;
@@ -61,4 +68,22 @@ body {
 .txt-st {
   font-size: var(--fz-xl);
   font-weight: bold;
+}
+/* TABLE */
+@media screen and (min-width: 767px) {
+  :root{
+    --pd-x:4%;   
+  }
+* {
+  font-size: var(--fz-md);
+}
+}
+/* DESKTOP */
+@media screen and (min-width: 1026px) {
+  :root {
+    --pd-x:5%;
+  }
+}
+.p-section {
+  padding: 2rem var(--pd-x);
 }

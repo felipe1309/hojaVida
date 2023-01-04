@@ -29,7 +29,7 @@
   width: max-content;
   height: 2.5rem;
   padding: 0 10px;
-  display: flex;
+  display: none;
   align-items: center;
   margin-left: 15px;
 }
@@ -54,4 +54,14 @@
 }
 .header svg path {
   fill: var(--white-color);
+}
+/* TABLE */
+@media screen and (min-width: 767px) {
+  .header li {
+    display: flex;
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 1026px) {
+  
 }

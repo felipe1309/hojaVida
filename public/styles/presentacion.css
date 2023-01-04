@@ -1,9 +1,8 @@
 #presentacion {
-  padding: 2rem var(--pd-x);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 #presentacion h1 {
   font-size: 2rem;
@@ -29,7 +28,7 @@
 }
 #presentacion > figure > div {
   border: 4px solid var(--violet-color);
-  width: 400px;
+  width: 300px;
   height: auto;
 }
 #presentacion > figure img {
@@ -43,10 +42,16 @@
 /* Toble */
 @media screen and (min-width: 767px) {
   #presentacion > figure {
-    justify-content: start;
+    justify-content: center;
+  }
+  #presentacion > figure > div {
+    width: 400px;
   }
 }
 @media screen and (min-width: 1026px) {
+  #presentacion {
+    margin-top: 10rem;
+  }
   #presentacion > figure {
     margin: 0;
     justify-content: center;
